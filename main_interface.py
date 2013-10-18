@@ -13,6 +13,8 @@ class ShopWindow(QMainWindow):
 
         #create actions - these can be used in menus/toolbars etc.
         self.open_database = QAction("Open Database",self)
+        #self.open_database_sc = QKeySequence(Qt.Key_Control+Qt.Key_U)
+        self.open_database.setShortcut(QKeySequence("Ctrl+O+D"))
         self.close_database = QAction("Close Database",self)
         self.add_customer = QAction("Add Customer",self)
         self.browse_customers = QAction("Browse Customers",self)

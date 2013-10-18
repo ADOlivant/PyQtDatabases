@@ -13,9 +13,8 @@ class FindCustomerWidget(QWidget):
         self.connection = connection
 
         self.stacked_layout = QStackedLayout()
-        self.find_customer_layout()
-
         self.setLayout(self.stacked_layout)
+        self.find_customer_layout()
 
 
         #connections

@@ -11,6 +11,8 @@ class ShopWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
+        self.setWindowTitle("Coffee Shop Application")
+
         #create actions - these can be used in menus/toolbars etc.
         self.open_database = QAction("Open Database",self)
         self.open_database.setShortcut(QKeySequence("Ctrl+D")) # tested - working
